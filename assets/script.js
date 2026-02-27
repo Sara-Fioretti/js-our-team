@@ -74,7 +74,7 @@ function createCard(name, role, email, img) {
   textContainer.classList.add("card-text")
 
   let memberName = document.createElement ("h3")
-  memberName.innerText = name
+  memberName.innerText = name.toUpperCase()
 
   let memberRole = document.createElement ("h4")
   memberRole.innerText = role
