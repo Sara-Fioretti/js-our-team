@@ -95,3 +95,21 @@ for (let i = 0; i < teamMembers.length; i++) {
   createCard (name, role, email, img)
 }
 
+/*4) BONUS: Aggiungere un form di aggiunta membri che permetta di visualizzare il nuovo membro sulla pagina
+-) Aggancio il form e i vari elementi del form
+-) Aggiungo un addEventListner al form all'evento del submit 
+-) Agiungo al form un preventDefault
+-)Richiamo la funzione createCard
+*/
+let form = document.getElementById ("new-member-form")
+let newMemberName = document.getElementById("newMemberName")
+let newMemberRole = document.getElementById ("newMemberRole")
+let newMemberEmail = document.getElementById ("newMemberEmail")
+let newMemberImage = document.getElementById ("newMemberImage")
+
+form.addEventListener("submit",
+  function(e){
+    e.preventDefault();
+    createCard (newMemberName.value, newMemberRole.value, newMemberEmail.value, newMemberImage.value)
+  }
+)

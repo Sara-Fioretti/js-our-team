@@ -25,7 +25,7 @@ p {
     flex-wrap: wrap;
     margin: 0 auto;
     flex-basis: calc((100%/3-((20px*2)/3)));
-    row-gap: 30px;
+    row-gap: 20px;
 }
 .team-card {
     background-color: black;
@@ -36,6 +36,7 @@ p {
     align-items: center;
     width: 500px;
 }
+
 
 @media screen and (max-width: 768px) {
     .team-container {
@@ -48,3 +49,5 @@ p {
         margin: 10% auto;
     }
 }
+
+
